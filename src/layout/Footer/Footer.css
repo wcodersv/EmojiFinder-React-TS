@@ -1,0 +1,17 @@
+/*FOOTER*/
+.footer {
+    max-width: 986px;
+    border-top: #ced4da solid 1px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.footer__title {
+    color: var(--secondary-color, #6c757d);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-top: 13px;
+    padding-bottom: 17px;
+}

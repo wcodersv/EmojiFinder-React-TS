@@ -1,0 +1,32 @@
+/*PAGINATION - NAV - pages*/
+.pages-bar {
+    /*для ul*/
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+
+    margin: 0;
+    padding: 0;
+}
+
+.pages-bar li {
+    /*для li*/
+    padding: 12px 14px;
+    gap: 10px;
+
+    border: 1px solid var(--stroke-light, #DEE2E6);
+    background: var(--gray-white, #FFF);
+
+    color: var(--cyan-800, #055160);
+    line-height: 16px;
+    cursor: pointer;
+}
+
+.pagination-nav__pages {
+    display: flex;
+    align-items: center;
+}
+
+.pagination-nav__pages p {
+    margin: 0 0 0 20px;
+}

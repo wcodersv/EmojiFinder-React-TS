@@ -1,0 +1,31 @@
+/*MAIN - INPUT*/
+.input-search input {
+    /* width: 820px; */
+    /* height: 64px; */
+    width: 80%;
+    height: 6%;
+    
+
+    border-radius: 4px;
+    border: 1px solid var(--stroke-input, #ced4da);
+    background: var(--gray-white, #fff);
+
+    position: absolute;
+    top: -32px;
+    left: 83px;
+
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 21px;
+    padding-left: 32px;
+    color: #3f444a;
+}
+
+input:placeholder-shown {
+    color: var(--secondary-light-color, #abb5be);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 21px;
+    padding-left: 32px;
+    box-sizing: border-box;
+}

@@ -1,0 +1,42 @@
+:root {
+  --cyan-100: #cff4fc;
+}
+
+body {
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  overflow: auto;
+  background-color: #EDEEF3;
+}
+
+/*MAIN*/
+.main {
+  max-width: 986px;
+  position: relative;
+  top: 0;
+  left: 0;
+
+  padding-top: 80px;
+  margin-bottom: 50px;
+  margin: 0 auto;
+}
+
+
+/*PAGINATION - NAV*/
+.pagination-nav {
+  max-width: 986px;
+  border-top: #ced4da solid 1px;
+  margin: 0 auto;
+  padding: 19px 0 19px 0;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+}

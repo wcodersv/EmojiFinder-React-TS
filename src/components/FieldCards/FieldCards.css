@@ -1,0 +1,76 @@
+/*MAIN - CARD*/
+.field-cards {
+    margin-bottom: 50px;
+}
+
+.card-body {
+    /*для ul*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 19px;
+    grid-column-gap: 22px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+.card {
+    /*для li*/
+    /* width: 316px;*/
+    height: 184px;
+    border-radius: 4px;
+    border: 1px solid var(--stroke-light, #dee2e6);
+    background: #fff;
+}
+
+.card-inform {
+    /*для содержимого (div) внутри li*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 136px;
+    width: 268px;
+    margin: 24px auto 24px;
+    padding: 0;
+}
+
+.card-inform__symbol {
+    /*для символа внутри li*/
+    height: 48px;
+    width: 48px;
+    padding: 0;
+    margin: 0;
+
+    color: var(--body-text-base-color, #68717a);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 48px;
+}
+
+.card-inform__title {
+    /*для заголовка внутри li*/
+    color: #000;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 28px;
+    text-decoration-line: underline;
+    text-align: center;
+
+    padding: 0;
+    margin: 0;
+}
+
+.card-inform__description {
+    /*для описания внутри li*/
+    color: #3f444a;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+
+    padding: 0;
+    margin: 0;
+}

@@ -1,46 +1,60 @@
-# Getting Started with Create React App
+### Сервис по поиску emoji по ключевым словам на React с использованием TypeScript
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**👩‍💻 Общее описание:**
 
-## Available Scripts
+Необходимо переписать существующий проект, реализованный на JavaScript, на React с использованием TypeScript. Основная функциональность проекта - это поиск emoji по ключевым словам. Пользователи смогут фильтровать emoji по ключевым словам,  и настраивать количество отображаемых элементов на странице. Для загрузки данных о доступных emoji будет использоваться метод fetch для запросов к серверу. Также требуется реализовать фильтрацию emoji через API сервера и добавить анимированный спиннер загрузки для улучшенной визуальной обратной связи.
+<i>В качестве технологического стека используется React с TypeScript.</i>
 
-In the project directory, you can run:
+**📌 Основные задачи:**
 
-### `npm start`
+1. Переписать существующий <a href="https://github.com/wcodersv/EmojiFinder.git">проект, реализованный на JavaScript,</a> с использованием React и TypeScript.
+2. Создать компоненты для ввода ключевых слов, отображения emoji и элементов пагинации.
+3. Реализовать фильтрацию emoji по ключевым словам.
+4. Добавить пагинацию для просмотра карточек и возможность настройки числа отображаемых карточек на странице.
+5. Реализовать подгрузку данных с сервера с использованием метода `fetch` и хука `useEffect`.
+6. Добавить фильтрацию emoji через API сервера.
+7. Разработать анимированный спиннер загрузки для обратной связи с пользователем.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**📋 Технические детали:**
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Использовать React с TypeScript для создания компонентов и управления состоянием приложения.
+- Реализовать асинхронную подгрузку данных emoji с сервера, используя метод `fetch` и хук `useEffect`.
+- Для обработки типов данных и предотвращения ошибок использовать TypeScript.
+- Разработать компоненты для отображения и фильтрации emoji:
+  - `Input` - компонент для ввода ключевых слов.
+  - `FieldCards` - компонент для отображения уникальных emoji с ключевыми словами.
+  - `PaginationNavPages` - компонент для пагинации по страницам.
+  - `PaginationNavPerpage` - компонент для выбора количества карточек на странице.
+  - `Loader` - компонент для анимированной загрузки данных.
+- Реализовать функции для обработки изменения текущей страницы и количества карточек на странице.
+- Использовать API сервера для фильтрации emoji по ключевым словам.
+- Реализовать анимацию спиннера загрузки для улучшенной визуальной обратной связи.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**📋  Технические детали (использование хуков и состояний):**
 
-### `npm run build`
+В проекте используются следующие хуки и состояния для управления данными и состоянием компонентов:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- `useState`:
+  - `inputValue` - хранит значение ввода ключевых слов.
+  - `isLoading` - управляет состоянием загрузки.
+  - `data` - содержит массив данных карточек emoji.
+  - `currentPage` - отслеживает текущую страницу для пагинации.
+  - `cardsPerPage` - определяет количество карточек на странице.
+  - `dataUniqueWords` - состояние для хранения обработанных данных эмодзи с уникальными ключевыми словами.
+  
+  **⚙️ Пример:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  ```tsx
+  const [inputValue, setInputValue] = useState('');
+  const [isLoading, setLoading] = useState(false);
+  const [data, setData] = useState<any[]>([]);
+  const [currentPage, setCurrentPage] = useState(0);
+  const [cardsPerPage, setCardsPerPage] = useState(12);
+  const [dataUniqueWords, setDataUniqueWords] = useState<any[]>([]);
+  ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- `useEffect`:
+  - для выполнения запросов к API для получения данных эмодзи в зависимости от `inputValue`, `currentPage` и `cardsPerPage`.
+  - для обработки данных и создания массива с уникальными ключевыми словами.
+  - для взаимодействия с внешними ресурсами и выполнения побочных эффектов.

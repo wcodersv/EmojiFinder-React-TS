@@ -1,0 +1,26 @@
+/*HEADER*/
+.header {
+    height: 295px;
+    border: 1px solid var(--stroke-input, #ced4da);
+    background: linear-gradient(134deg, #087990 0%, #055160 100%);
+}
+
+.header-title {
+    margin: 68px auto 68px;
+    text-align: center;
+}
+
+.header-title h1 {
+    color: var(--cyan-100, #cff4fc);
+    font-size: 72px;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0 0 0 4px;
+}
+
+.header-title p {
+    color: var(--cyan-100, #cff4fc);
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 36px;
+}
