@@ -1,9 +1,8 @@
 /*MAIN - INPUT*/
 .input-search input {
     /* width: 820px; */
-    /* height: 64px; */
+    height: 64px;
     width: 80%;
-    height: 6%;
     
 
     border-radius: 4px;

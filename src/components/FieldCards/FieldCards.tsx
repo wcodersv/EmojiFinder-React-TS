@@ -1,9 +1,11 @@
 import React from 'react';
 import './FieldCards.css';
+import { EmojiData } from '../../app/App';
+import Card from '../Card';
 
 // Определение интерфейса для свойств компонента
 interface FieldCardsProps {
-    data: any[];
+    data: EmojiData[];
 }
 
 export const FieldCards = ({ data }: FieldCardsProps) => {
@@ -11,13 +13,12 @@ export const FieldCards = ({ data }: FieldCardsProps) => {
         <div className="field-cards">
             <ul className="card-body">
                 {data.map((item: any) => (
-                    <li key={item.title} className='card'>
-                        <div className='card-inform'>
-                            <p className='card-inform__symbol'>{item.symbol}</p>
-                            <h2 className="card-inform__title">{item.title}</h2>
-                            <p className="card-inform__description">{item.keywords.join(' ')}</p>
-                        </div>
-                    </li>
+                    <Card
+                        key={item.title}
+                        title={item.title}
+                        symbol={item.symbol}
+                        keywords={item.keywords}
+                    />
                 ))}
             </ul>
         </div>

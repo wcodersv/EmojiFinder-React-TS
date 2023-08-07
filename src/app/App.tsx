@@ -8,19 +8,26 @@ import PaginationNavPages from '../components/PaginationNavPages';
 import PaginationNavPerpage from '../components/PaginationNavPerpage';
 import Loader from '../ui/Loader';
 
+
+ export interface EmojiData {
+  title: string;
+  symbol: string;
+  keywords: string[];
+}
+
 function App() {
   // Хранение значения из Input
   const [inputValue, setInputValue] = useState('');
   // Состояние для отображения загрузки
   const [isLoading, setLoading] = useState(false);
   // Состояние для хранения массива данных карточек
-  const [data, setData] = useState<any[]>([]);
+  const [data, setData] = useState<EmojiData[]>([]);
   // Состояние для текущей страницы
   const [currentPage, setCurrentPage] = useState(0);
   // Состояние для количества карточек на странице
   const [cardsPerPage, setCardsPerPage] = useState(12);
   // Состояние для хранения обработанных данных эмодзи с уникальными ключевыми словами
-  const [dataUniqueWords, setDataUniqueWords] = useState<any[]>([]);
+  const [dataUniqueWords, setDataUniqueWords] = useState<EmojiData[]>([]);
 
   // Загрузка данных при изменении inputValue, currentPage или cardsPerPage
   useEffect(() => {
@@ -120,5 +127,6 @@ function App() {
     </>
   );
 }
+
 
 export default App;
