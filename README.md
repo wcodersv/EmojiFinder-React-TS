@@ -43,16 +43,7 @@
   - `cardsPerPage` - определяет количество карточек на странице.
   - `dataUniqueWords` - состояние для хранения обработанных данных эмодзи с уникальными ключевыми словами.
   
-  **⚙️ Пример:**
-
-  ```tsx
-  const [inputValue, setInputValue] = useState('');
-  const [isLoading, setLoading] = useState(false);
-  const [data, setData] = useState<any[]>([]);
-  const [currentPage, setCurrentPage] = useState(0);
-  const [cardsPerPage, setCardsPerPage] = useState(12);
-  const [dataUniqueWords, setDataUniqueWords] = useState<any[]>([]);
-  ```
+  
 
 - `useEffect`:
   - для выполнения запросов к API для получения данных эмодзи в зависимости от `inputValue`, `currentPage` и `cardsPerPage`.
