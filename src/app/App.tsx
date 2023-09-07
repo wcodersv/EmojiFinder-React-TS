@@ -52,7 +52,7 @@ function App() {
       } catch (error) {
         setLoading(false);
         console.log("Произошла ошибка", error);
-        alert('Упсссс, ошибка не моя, не работает API')
+        alert('Упссс! Ошибка не моя, что-то не так с API (http://api.codeoverdose.space/api/emoji/v1)')
       } finally {
         setLoading(false);
       }
