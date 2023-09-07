@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/EmojiFinder_react/static/css/main.2a4e16ee.css",
-    "main.js": "/EmojiFinder_react/static/js/main.ba8777e5.js",
+    "main.js": "/EmojiFinder_react/static/js/main.a25b795e.js",
     "index.html": "/EmojiFinder_react/index.html",
     "main.2a4e16ee.css.map": "/EmojiFinder_react/static/css/main.2a4e16ee.css.map",
-    "main.ba8777e5.js.map": "/EmojiFinder_react/static/js/main.ba8777e5.js.map"
+    "main.a25b795e.js.map": "/EmojiFinder_react/static/js/main.a25b795e.js.map"
   },
   "entrypoints": [
     "static/css/main.2a4e16ee.css",
-    "static/js/main.ba8777e5.js"
+    "static/js/main.a25b795e.js"
   ]
 }
