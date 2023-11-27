@@ -1,6 +1,6 @@
 ### Сервис по поиску emoji по ключевым словам на React с использованием TypeScript
 
-### <a href="https://wcodersv.github.io/EmojiFinder_react/" target="_blank">Посмотреть сайт</a>
+### Посмотреть сайт можно справа, под разделом 'About'.
 
 <details>
 <summary>Ошибка: страница не прогружается</summary>

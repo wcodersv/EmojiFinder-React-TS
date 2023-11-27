@@ -9,7 +9,7 @@ import PaginationNavPerpage from '../components/PaginationNavPerpage';
 import Loader from '../ui/Loader';
 
 
- export interface EmojiData {
+export interface EmojiData {
   title: string;
   symbol: string;
   keywords: string[];
